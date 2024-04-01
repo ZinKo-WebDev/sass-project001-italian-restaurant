@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #262626;
+}
+
+.brand__logo {
+  color: #d3ab55;
+  width: 110px;
+  height: 110px;
+  border: 3px solid #d3ab55;
+  border-radius: 50%;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.brand__logo i {
+  font-size: 65px;
+}
+
+.head {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url("https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.head .brand {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+}
+.head-banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+.head-banner__welcome {
+  font-family: "Dancing Script", cursive;
+  font-size: 90px;
+  font-weight: 300;
+  color: #d3ab55;
+  margin-bottom: 40px;
+}
+.head-banner__advertising {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 43px;
+  font-weight: 300;
+  color: #bbb;
+  margin-bottom: 60px;
+}
+
+.btn {
+  width: 170px;
+  height: 45px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: transparent;
+  font-weight: 500;
+  transition: 0.3s ease-in-out;
+  border: 2px solid #d3ab55;
+  color: #d3ab55;
+  cursor: pointer;
+}
+.btn:hover {
+  border: 2px solid white;
+  color: white;
+  background-color: #d3ab55;
+}
+
+.brand-info {
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #bbb;
+  text-align: center;
+}
+.brand-info__name {
+  font-family: "Nunito", sans-serif;
+  font-size: 43px;
+}
+.brand-info__type {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 27px;
+}
+
+.about-section {
+  height: 100vh;
+  width: 100%;
+}
+.about-section .about-header {
+  text-align: center;
+  padding: 20px 0;
+}
+.about-section .about-us {
+  align-items: center;
+  display: flex;
+}
+.about-section .about-us__left {
+  width: 40%;
+  padding: 20px;
+}
+.about-section .about-us__left img {
+  width: 100%;
+  height: auto;
+}
+.about-section .about-us__right {
+  width: 60%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.about-section .about-us__right .about_advertising {
+  margin-bottom: 20px;
+}
+.about-section .about-us__right .stars {
+  margin: 20px 0;
+}
+.about-section .about-us__right .star {
+  color: #d3ab55;
+  margin: 0 10px;
+  font-size: 14px;
+}
+.about-section .about-us__right .description {
+  color: #bbb;
+  font-family: "Josefin Sans", sans-serif;
+  font-style: italic;
+  font-size: 27px;
+  text-align: justify;
+}
+.about-section .about-us__right .description::first-letter {
+  padding-left: 60px;
+}
+
+.menu {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url("https://images.pexels.com/photos/1640774/pexels-photo-1640774.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.menu-header {
+  text-align: center;
+}
+
+.menu-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: calc(25% - 8px);
+  height: 37vh;
+  background-color: white;
+  margin: 2px;
+}
+
+/*# sourceMappingURL=main.css.map */

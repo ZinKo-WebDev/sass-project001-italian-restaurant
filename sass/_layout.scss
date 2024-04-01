@@ -1,0 +1,148 @@
+.head {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+    url("https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  .brand {
+    @include centeringElement(15%);
+    display: flex;
+    align-items: center;
+  }
+  &-banner {
+    @include centeringElement(50%);
+    text-align: center;
+    color: $color-white;
+    &__welcome {
+      font-family: $font-dancing;
+      font-size: $font-2xl;
+      font-weight: 300;
+      color: $color-primary;
+      margin-bottom: 40px;
+    }
+    &__advertising {
+      font-family: $font-josefin;
+      font-size: $font-lg;
+      font-weight: 300;
+      color: $color-secondary;
+      margin-bottom: 60px;
+    }
+  }
+}
+.btn {
+  width: 170px;
+  height: 45px;
+  font-family: $font-josefin;
+  font-size: $font-sm;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: transparent;
+  font-weight: 500;
+  transition: 0.3s ease-in-out;
+  border: 2px solid $color-primary;
+  color: $color-primary;
+  cursor: pointer;
+
+  &:hover {
+    border: 2px solid $color-white;
+    color: $color-white;
+    background-color: $color-primary;
+  }
+}
+
+.brand-info {
+  @include textStyle;
+  color: $color-secondary;
+  text-align: center;
+  &__name {
+    font-family: $font-nunito;
+    font-size: $font-lg;
+  }
+  &__type {
+    font-family: $font-josefin;
+    font-size: $font-md;
+  }
+}
+.about-section {
+  height: 100vh;
+  width: 100%;
+  .about-header {
+    text-align: center;
+    padding: 20px 0;
+  }
+  .about-us {
+    align-items: center;
+    display: flex;
+    &__left {
+      width: 40%;
+      padding: 20px;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    &__right {
+      width: 60%;
+      padding: 20px;
+      @include flexLayout;
+      flex-direction: column;
+
+      .about_advertising {
+        margin-bottom: 20px;
+      }
+      .stars {
+        margin: 20px 0;
+      }
+      .star {
+        color: $color-primary;
+        margin: 0 10px;
+        font-size: $font-sm;
+      }
+      .description {
+        color: $color-secondary;
+        font-family: $font-josefin;
+        font-style: italic;
+        font-size: $font-md;
+        text-align: justify;
+        &::first-letter{
+            padding-left: 60px;
+        }
+      }
+    }
+  }
+}
+.menu{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+    url("https://images.pexels.com/photos/1640774/pexels-photo-1640774.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  background-attachment: fixed;
+}
+.menu-header{
+    text-align: center;
+}
+.menu-cards{
+
+
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+
+
+
+}
+.card{
+    width: calc(25% - 8px);
+    height: 37vh;
+    background-color: white;
+    margin: 2px;
+  
+}
